@@ -10,11 +10,10 @@ Será necesario tener instalado en el sistema pip, Python y *añadirlo al path*,
 ## Pasos para usarla
 
 ### Clonar el repositorio
-Para comenzar, clona el repositorio de GitHub a tu máquina local usando el siguiente comando en tu terminal o línea de comandos de git bash:
+Para comenzar, clona el repositorio de GitHub a tu máquina local usando el siguiente comando en una terminal o línea de comandos de git bash que abras dentro de la ubicación de tu preferencia:
 
 ```bash
 git clone https://github.com/ic-222/EXAMEN-ii
-cd tu-repositorio
 ```
 
 ### Instalar Requerimientos
