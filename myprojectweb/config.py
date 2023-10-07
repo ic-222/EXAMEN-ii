@@ -7,7 +7,7 @@ class Config:
     DEBUG = True
 
     # Configuración de la base de datos MS Access
-    DATABASE_CONNECTION_STRING = r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=D:\Desktop\BP II\Examen II\Examen II\TaskDB.accdb;'
+    DATABASE_CONNECTION_STRING = r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=D:\Desktop\BP II\Examen II\EXAMEN-ii\TaskDB.accdb;'
 
     @staticmethod
     def init_app(app):
