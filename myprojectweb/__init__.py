@@ -4,13 +4,13 @@ from config import config
 
 app = Flask(__name__)
 
-# Cargar la configuración correspondiente según el entorno
-environment = 'development'  
+environment = 'development' 
 app.config.from_object(config[environment])
 
 # Establecer la conexión a la base de datos utilizando la configuración
 conn = pyodbc.connect(app.config['DATABASE_CONNECTION_STRING'])
 cursor = conn.cursor()
+
 
 # ## APP CÓDIGO
 @app.route('/')
