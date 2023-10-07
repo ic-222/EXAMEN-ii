@@ -80,12 +80,23 @@
         }
 
         .task-form h2 {
-    color: #333; /* Cambiar a un gris oscuro (#333) */
+    color: #333; 
 }
+
+.icon {
+    width: 60px; 
+    height: 60px; 
+    display: inline-block; 
+}
+
 
     </style>
 </head>
 <body>
+    
+    <img src="{{ url_for('static', filename='icon.png') }}" alt="Icono" class="icon">
+
+    <br>
     <div class="container">
         <div class="header">
             <h1>Lista de Tareas</h1>

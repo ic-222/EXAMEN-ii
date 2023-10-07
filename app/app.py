@@ -1,17 +1,16 @@
 import pyodbc
 from flask import Flask, render_template, request, redirect, url_for
-import sqlite3
+from config import config
 
 app = Flask(__name__)
 
-## CONECTAR BASE DE DATOS DESDE ACCESS
+# Cargar la configuración correspondiente según el entorno
+environment = 'development'  
+app.config.from_object(config[environment])
 
-conn = pyodbc.connect(r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=D:\Desktop\BP II\Examen II\Examen II\TaskDB.accdb;')
+# Establecer la conexión a la base de datos utilizando la configuración
+conn = pyodbc.connect(app.config['DATABASE_CONNECTION_STRING'])
 cursor = conn.cursor()
-
-
-def conectar_bd():
-    return pyodbc.connect(conn)
 
 # ## APP CÓDIGO
 @app.route('/')
@@ -19,6 +18,8 @@ def mostrar_tareas():
     cursor.execute('SELECT * FROM Tareas')
     tareas = cursor.fetchall()
     return render_template('mostrar_tareas.html', tareas=tareas)
+
+
 
 ## ACCIONES DE LA APP
 
