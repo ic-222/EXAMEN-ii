@@ -1,3 +1,4 @@
+![image](https://github.com/ic-222/EXAMEN-ii/assets/136537533/d7011b5f-f6bd-4f30-86bf-c9044ed3f38a)
 
 Esta lista de tareas es una aplicación web simple construida con Flask, un marco de desarrollo web de Python. Permite a los usuarios crear tareas, marcarlas como completadas y eliminarlas de la lista. La aplicación utiliza una base de datos MS Access para almacenar las tareas.
 
